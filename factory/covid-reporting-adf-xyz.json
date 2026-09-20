@@ -1,0 +1,15 @@
+{
+	"name": "covid-reporting-adf-xyz",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "41d152d4-6db4-4517-b486-dcf08f99c179",
+		"tenantId": "522ac3fa-6070-4be1-b368-127cede88944"
+	}
+}

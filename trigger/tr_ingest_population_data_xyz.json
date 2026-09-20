@@ -1,0 +1,24 @@
+{
+	"name": "tr_ingest_population_data_xyz",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_population_data_xyz",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c131c84c-81b6-432e-b635-769072abde53/resourceGroups/covid-reporting-rg-xyz/providers/Microsoft.Storage/storageAccounts/covidreportingstgaccxyz",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
